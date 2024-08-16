@@ -143,7 +143,7 @@ if(req.cookies.userenter){
     namedata2=namedata
     var subject;
     var subjectlist=["phyics","chemistry","maths"]
-    if(!req.cookies.subject)
+    if(!req.cookies.subject){
     for(let i=0; i<subjectlist.length ; i++){
         const Teachers=await collection.findOne({name:namedata,subject:subjectlist[i]})
       
@@ -154,7 +154,7 @@ if(req.cookies.userenter){
 
         
     }
-    
+}
     else{
 subject=req.cookies.subject
     }
