@@ -23,7 +23,7 @@
          required:true
      }
   });
-  const collection = new mongodb.model("students",mongodbschema);
+  const collection = new mongodb.model("Teachers",mongodbschema);
   module.exports=collection;
 
 
